@@ -1,0 +1,2 @@
+const e=document.querySelector(".hour"),t=document.querySelector(".min"),r=document.querySelector(".sec"),o=()=>{const o=new Date,n=o.getHours();((o,n,c)=>{const s=6*c,u=6*(n+c/60),a=30*(o+n/60);r.style.transform=`rotate(${s}deg)`,t.style.transform=`rotate(${u}deg)`,e.style.transform=`rotate(${a}deg)`})(n>11?n-12:n,o.getMinutes(),o.getSeconds())},n=window.document.querySelectorAll(".current-year"),c=(new Date).getFullYear();window.setInterval(o,1e3),n.forEach((e=>{e.textContent=c}));
+//# sourceMappingURL=index.31c958ae.js.map
